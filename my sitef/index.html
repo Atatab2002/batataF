@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="java/script.js" defer></script>
+  <link href="css/style.css" rel="stylesheet">
+  <title>Tabs</title>
+</head>
+<body>
+  <nav id="nav">
+    <p>animes</p>
+    <button aria-label="Abrir Menu" id="btn-mobiles" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+      <span id="hamburger"></span>
+    </button>
+    <ul id="tabs" role="tabs">
+      <li data-tab-targets="#home" class="active tabs">animes com A</li>
+      <li data-tab-targets="#pricing" class="tabs">animes com B</li>
+      <li data-tab-targets="#about" class="tabs">animes com C</li>
+      <li data-tab-targets="#teste" class="tabs">animes com D</li>
+      <li data-tab-targets="#teste2" class="tabs">animes com E</li>
+      <li data-tab-targets="#teste3" class="tabs">animes com E</li>
+    </ul>
+  </nav>
+  <div class="tab-content">
+    <div id="home" data-tab-contents class="active">
+      <h1>Filmes de ação</h1>
+      <section class="flex">
+        <div>
+          <img class="imgf" src="./img/batman.jpg">
+          <p>Legenda</p>
+        </div>
+        <div>
+          <img class="imgf" src="./img/batman.jpg">
+          <p>Legenda</p>
+        </div>
+        <div>
+          <img class="imgf" src="./img/batman.jpg">
+          <p>Legenda</p>
+        </div>
+        <div>
+          <img class="imgf" src="./img/batman.jpg">
+          <p>Legenda</p>
+        </div>
+        <div>
+          <img class="imgf" src="./img/batman.jpg">
+          <p>Legenda</p>
+        </div>
+        <div>
+          <img class="imgf" src="./img/batman.jpg">
+          <p>Legenda</p>
+        </div>
+      </section>
+      
+      <footer>
+        <button class="btn-toggle"><a class="darktheme">dark theme</a></button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="pricing" data-tab-contents>
+    <h1>Filmes de terror</h1>
+    <h2>Some information on pricing</h2>
+    <section class="flex">
+      <div>
+        <img class="imgf" src="./img/centopeia.jpg">
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img class="imgf" src="./img/centopeia.jpg">
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img class="imgf" src="./img/centopeia.jpg">
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img class="imgf" src="./img/centopeia.jpg">
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img class="imgf" src="./img/centopeia.jpg">
+        <p>Legenda</p>
+      </div>
+      <div>
+        <img class="imgf" src="./img/centopeia.jpg">
+        <p>Legenda</p>
+      </div>
+    </section>
+  </div>
+  <div id="about" data-tab-contents>
+    <h1>About</h1>
+    <h2>Let me tell you about me</h2>
+  </div>
+  <div id="teste" data-tab-contents>
+    <h1>tester</h1>
+    <p>ffffffffffffff</p>
+  </div>
+  <div id="teste2" data-tab-contents>
+    <h1>tester</h1>
+    <p>ttttttttttttttt</p>
+  </div>
+  </div>
+</body>
+</html>

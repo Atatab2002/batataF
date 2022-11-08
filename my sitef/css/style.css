@@ -1,0 +1,303 @@
+[data-tab-contents] {
+  display: none;
+}
+
+.active[data-tab-contents] {
+  display: block;
+}
+
+body {
+  background-color: #171136;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+li{
+  font-family: Arial Narrow, sans-serif;
+  color: rgb(250, 54, 240);
+  text-align: center;
+}
+h1{
+  font-family: Arial Narrow, sans-serif;
+  color: rgb(250, 54, 240);
+  text-align: center;
+}
+h2{
+  font-family: Arial Narrow, sans-serif;
+  color: rgb(250, 54, 240);
+  text-align: center;
+}
+p{
+  font-family:Arial Narrow, sans-serif;
+  font-weight: bolder;
+  color: rgb(6, 1, 37);
+  text-align:justify;
+  background-color: rgb(147, 216, 248);
+  padding: 10px;
+  border-radius: 20px;
+  display: flexbox;
+  width: 100px;
+}
+figure {
+  max-width:64rem;
+  width:100%;
+  max-height:30.875rem;
+  height:100%;
+  margin:1.25rem auto;
+  padding:1.051%;
+  background-color:rgb(88, 88, 88);
+}
+.imgf{
+  height: 400px;
+  width: 280px;
+}
+#logo img{
+  padding: auto;
+  height: 110px;
+  width: 240px;
+  position:inherit;
+}
+footer{
+  box-sizing: border-box;
+  height: 80px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(147, 216, 248);
+  border-radius: 20px;
+}
+aside{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(147, 216, 248);
+  border-radius: 20px;
+}
+.video2{
+  float:left;
+	border:none;
+	transition-duration:1s;
+	height:220px;
+	width:400px;
+	align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav3{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: rgb(147, 216, 248);
+  height: 30vh;
+  border-radius: 20px;
+}
+.flex {
+  float:center;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex > div {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+#tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgb(100, 60, 93);
+}
+.tabs {
+  cursor: pointer;
+  padding: 25px;
+  height: 20px;
+}
+.tabs:hover {
+  background-color: rgba(195, 22, 230, 0.719);
+  border-radius: 30px;
+}
+.tab-contents {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#nav{
+  height: 70px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+#tabs {
+  display: block;
+  position: absolute;
+  width: 10%;
+  top: 100px;
+  right: 100px;
+  background: rgba(197, 182, 196, 0.493);
+  transition: 0.6s;
+  z-index: 1000;
+  height: 0px;
+  visibility: hidden;
+  overflow-y: hidden;
+  border-radius: 30px;
+}
+#nav.active #tabs {
+  height: calc(100vh - 70px);
+  visibility: visible;
+  overflow-y: auto;
+}
+#tabs a {
+  padding: 0,1rem;
+  margin: 0,2rem;
+  border-bottom: 2px solid rgba(7, 157, 226, 0.05);
+}
+#btn-mobiles {
+  display: flex;
+  padding: 25px 9px;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 4px;
+  left: 50%;
+  transform: translate(1100%,-05%);
+}
+#hamburger{
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid rgb(91, 0, 196);
+}
+
+#nav.active #hamburger {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid rgb(46, 255, 255);
+  transform: rotate(89deg);
+}
+#nav.active #hamburger::before {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid rgb(91, 0, 196);
+}
+#nav.active #hamburger::after {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid rgb(91, 0, 196);
+}
+@media (max-width: 600px) {
+  #nav{
+    height: 70px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+  }
+  #tabs {
+    display: block;
+    position: absolute;
+    width: 30%;
+    top: 80px;
+    right: 50px;
+    background: rgba(197, 182, 196, 0.493);
+    transition: 0.6s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+    border-radius: 40px;
+  }
+  #nav.active #tabs {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #tabs a {
+    padding: 0,1rem;
+    margin: 0,2rem;
+    border-bottom: 2px solid rgba(7, 157, 226, 0.05);
+  }
+  #btn-mobiles{
+    display: flex;
+    padding: 25px 9px;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 4px;
+    left: 50%;
+    transform: translate(80%,-05%);
+  }
+  #hamburger{
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid rgb(91, 0, 196);
+  }
+  
+  #nav.active #hamburger {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid rgb(46, 255, 255);
+    transform: rotate(89deg);
+  }
+  #nav.active #hamburger::before {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid rgb(91, 0, 196);
+  }
+  #nav.active #hamburger::after {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid rgb(91, 0, 196);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --text-color: rgb(102, 11, 177);
+    --bkg-color: #e0fafc;
+    --clor-color:rgb(177, 255, 251);
+    --tabs-color:rgb(177, 255, 251);
+    --tab-color:rgb(44, 240, 247);
+    --h1-color:rgb(65, 67, 226);
+    --menu-color:rgb(197, 201, 0);
+    --dfg-color:rgb(187, 115, 255);
+    --footer-color:rgb(248, 245, 48);
+  }
+  body.light-theme {
+    --text-color: rgb(255, 255, 255);
+    --bkg-color: rgb(0, 0, 0);
+    --clor-color:rgb(128, 190, 248);
+    --tabs-color:rgb(32, 184, 255);
+    --tab-color:rgb(114, 84, 250);
+    --h1-color:rgb(41, 20, 43);
+    --menu-color:rgb(70, 230, 241);
+    --dfg-color:rgb(48, 235, 248);
+    --footer-color:rgb(48, 248, 248);
+  }
+}
+body {
+  background: var(--bkg-color);
+}
